@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+import { GALLERY_IMAGES } from "@/data/gallery";
+---
+
+<section id="gallery" class="w-full py-12 md:py-24 lg:py-32 relative isolate lg:pb-10">
+  <Image src={"https://astro.build/_astro/HeroBackground.B0iWl89K_2hpsgp.webp"} width={1080} height={790} alt={""} class="hidden dark:block absolute inset-0 bottom-0 h-full -z-10" />
+
+  <div class="container px-4 md:px-6">
+    <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">Our Works</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-20">
+      {
+        GALLERY_IMAGES.map((img) => {
+          return <Image src={img.image} alt="Printed Brochures for Nagercoil businesses" width={400} height={300} class="rounded-lg object-cover aspect-square cursor-pointer hover:scale-105 transition-all w-full h-full" />;
+        })
+      }
+    </div>
+  </div>
+</section>

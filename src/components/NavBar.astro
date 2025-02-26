@@ -1,0 +1,18 @@
+---
+import logo from "@/assets/logo.png";
+import { Image } from "astro:assets";
+---
+
+<nav class="py-4 fixed left-0 right-0 top-0 bg-white/50 dark:bg-black/50 dark:text-white z-50 backdrop-blur">
+  <div class="container flex justify-between items-center">
+    <div class="flex items-center gap-4">
+      <!-- <Image alt={"Logo"} src={logo} width={60} /> -->
+      <p class="font-bold text-2xl italic">Space Digital Media</p>
+    </div>
+    <ul class="gap-12 hidden lg:flex">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>

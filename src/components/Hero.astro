@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+import { Button } from "./ui/button";
+import logo from "@/assets/logo.png";
+import bg from "@/assets/background.svg";
+---
+
+<section>
+  <section class="w-full pt-20 py-12 md:py-24 lg:py-32 xl:py-48 bg-sblue-50 dark:bg-background dark:text-white relative isolate">
+    <Image src={"https://astro.build/_astro/HeroBackground.B0iWl89K_2hpsgp.webp"} width={1080} height={790} alt={""} class="hidden animate-pulse dark:block absolute inset-0 bottom-0 h-full -z-10" />
+    <Image src={bg} alt={""} class="absolute inset-0 bottom-0 h-full w-full object-cover -z-10 dark:hidden" />
+    <div class="container px-4 md:px-6">
+      <Image alt={"Logo"} src={logo} width={150} class="mx-auto mb-6" />
+      <div class="flex flex-col items-center space-y-4 text-center">
+        <div class="space-y-4 mt-8">
+          <h1 class="text-3xl font-bold -tracking-wide sm:text-4xl md:text-5xl lg:text-6xl/none">Best Premier Digital Printing Solution</h1>
+          <p class="mx-auto max-w-[700px] text-gray-500 dark:text-white/90 md:text-xl">High-quality digital printing and customized corporate gifts to elevate your brand in Nagercoil and across Kanyakumari District.</p>
+        </div>
+        <div class="space-x-4 mt-8">
+          <a href="#contact"><Button className="" size={"lg"}>Get a Quote</Button></a>
+          <a href="#services"><Button variant="outline" size={"lg"}>Our Services</Button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>

@@ -1,0 +1,39 @@
+---
+import { Mail, MapPin, Phone } from "lucide-react";
+import { Button } from "./ui/button";
+import { Textarea } from "./ui/textarea";
+import { Input } from "./ui/input";
+---
+
+<section id="contact" class="w-full py-12 md:py-24 lg:py-32">
+  <div class="container px-4 md:px-6">
+    <div class="grid gap-10 lg:grid-cols-2">
+      <div class="space-y-4">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get in Touch</h2>
+        <p class="text-gray-500">Have a question or ready to start your project? Reach out to us, and we'll get back to you shortly.</p>
+        <div class="space-y-2">
+          <div class="flex items-center">
+            <Phone className="h-5 w-5 mr-2 text-primary" />
+            <span>+91 4652 123456</span>
+          </div>
+          <div class="flex items-center">
+            <Mail className="h-5 w-5 mr-2 text-primary" />
+            <span>info@spacedigitalmedia.com</span>
+          </div>
+          <div class="flex items-center">
+            <MapPin className="h-5 w-5 mr-2 text-primary" />
+            <span>123 Anna Salai, Nagercoil, Tamil Nadu 629001</span>
+          </div>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <form action="" class="space-y-4">
+          <Input name="name" placeholder="Your Name" />
+          <Input type="email" name="email" placeholder="Your Email" />
+          <Textarea placeholder="Your Message" name="message" />
+          <Button type="submit" className="w-full"> Send Message </Button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
